@@ -124,7 +124,7 @@
 </style>
     </head>
         <body>
-            <audio id="musica" scr=""></audio>
+            <audio id="musica" scr="./476178__unadamlar__correct-choice.wav"></audio>
     <h1>Jogo da Memória</h1>  <!-- parte facíl -->
     <div id="game-container">
         <div id="controls">
@@ -279,6 +279,7 @@ function checkMatch() {
         card1.classList.add('matched');
         card2.classList.add('matched');
         matchedPairs++;
+        audio.play();
         updateScore(true);
         
         if (isTwoPlayerMode) {
