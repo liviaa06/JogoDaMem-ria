@@ -124,7 +124,7 @@
 </style>
     </head>
         <body>
-    <h1>Jogo da Memória</h1>
+    <h1>Jogo da Memória</h1>  <!-- parte facíl -->
     <div id="game-container">
         <div id="controls">
             <select id="theme-select">
@@ -192,6 +192,7 @@ let currentPlayer = 1;
 let player1Score = 0;
 let player2Score = 0;
 
+    //<!-- parte divertida -->
 const themes = {
     emojis: ['😀', '😎', '🥳', '🤔', '😍', '🤯', '🥶', '🤠', '👽', '🤖', '👻', '🎃', '🦄', '🐶', '🐱', '🦊'],
     animais: ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵', '🐔'],
@@ -253,7 +254,7 @@ function startGame() {
     
     updatePlayersInfo();
 }
-
+ //<!-- parte pesquisada -->
 function flipCard() {
     if (!gameStarted || this.classList.contains('flipped') || flippedCards.length === 2) return;
     
@@ -268,7 +269,7 @@ function flipCard() {
     
     updateDisplay();
 }
-
+// <!-- parte dificíl -->
 function checkMatch() {
     const [card1, card2] = flippedCards;
     const isMatch = card1.textContent === card2.textContent;
@@ -403,5 +404,6 @@ toggleModeButton.addEventListener('click', () => {
 });
 
 displayLeaderboard();
+     //<!--na minha opnião esse foi mais dificíl que o de streaming  -->
 </script>
 </body></html>
