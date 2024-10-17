@@ -124,7 +124,7 @@
 </style>
     </head>
         <body>
-            <audio id="musica" scr="./476178__unadamlar__correct-choice.wav"></audio>
+            <audio id="musica" src="./476178__unadamlar__correct-choice.mp3"></audio>
     <h1>Jogo da Memória</h1>  <!-- parte facíl -->
     <div id="game-container">
         <div id="controls">
@@ -178,6 +178,8 @@ const difficultySelect = document.getElementById('difficulty-select');
 const playersInfo = document.getElementById('players-info');
 const leaderboardBody = document.getElementById('leaderboard-body');
 
+
+let audio = document.getElementById('musica');
 let cards = [];
 let flippedCards = [];
 let matchedPairs = 0;
